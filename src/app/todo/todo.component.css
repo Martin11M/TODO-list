@@ -1,0 +1,17 @@
+.todo-card {
+  max-width: 1000px;
+}
+
+.todo-item-container {
+  width: 70vw;
+  height: 50px;
+}
+
+.todo-icon {
+  float: right;
+}
+
+.title {
+  float: left;
+}
+/*# sourceMappingURL=todo.component.css.map */

@@ -1,0 +1,40 @@
+<div class="container">
+  <h2 style="color: #ffffff">Add a TODO</h2>
+  <div [formGroup]="taskForm">
+    <mat-form-field class="input">
+      <input formControlName="title" matInput>
+    </mat-form-field>
+  </div> 
+  <button
+    [disabled]="!taskForm.valid"
+    class="todo-icon"
+    (click)="addTask()"
+    mat-raised-button
+    color="basic">
+    Add
+  </button>
+
+  <h2 style="color: #ffffff">TODOs</h2>
+  <mat-list class="todo-items">
+    <div *ngFor="let item of _todoService.todos">
+      <mat-list-item class="list-item">
+        <app-todo
+          [todo]="item"
+          (deletedItem)="delete($event)"
+          (doneItem)="markAsDone($event)"
+          (editedItem)="saveEdits($event)">
+        </app-todo>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+    </div>
+  </mat-list>
+
+  <h2 style="color: #ffffff">Done Items</h2>
+  <mat-list class="done-items">
+    <div *ngFor="let item of _doneItemsService.doneItems">
+      <mat-list-item class="list-item"><p>{{item.title}}</p></mat-list-item>
+      <mat-divider></mat-divider>
+    </div>
+  </mat-list>
+</div>
+

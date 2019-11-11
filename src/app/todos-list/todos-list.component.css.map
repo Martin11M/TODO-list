@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACT,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,cAAc,EAAE,MAAM;EACtB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CAAG;;AAEjB,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;CAAG;;AAEjB,AAAA,MAAM,CAAC;EACL,KAAK,EAAE,OAAO;CAAG",
+    "sources": [
+        "todos-list.component.sass"
+    ],
+    "names": [],
+    "file": "todos-list.component.css"
+}

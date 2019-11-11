@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-$primary-color: #222
-
-body
-  background-color: $primary-color
+body {
+  background-color: #222;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACT,SAAS,EAAE,MAAM;CAAG;;AAEtB,AAAA,oBAAoB,CAAC;EACnB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CAAG;;AAEjB,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,KAAK;CAAG;;AAEjB,AAAA,MAAM,CAAC;EACL,KAAK,EAAE,IAAI;CAAG",
+    "sources": [
+        "todo.component.sass"
+    ],
+    "names": [],
+    "file": "todo.component.css"
+}

@@ -1,0 +1,39 @@
+<div class="todo-item-container">
+  <div *ngIf="!editMode">
+    <p class="title">{{todo.title}}</p>
+    <button
+      class="todo-icon"
+      (click)="taskDone()"
+      mat-icon-button
+      color="basic">
+        <mat-icon>check_circle_outline</mat-icon>
+    </button>
+    <button
+      class="todo-icon"
+      (click)="taskDeleted()"
+      mat-icon-button color="primary">
+        <mat-icon>delete</mat-icon>
+    </button>
+    <button
+      class="todo-icon"
+      (click)="startEdit()"
+      mat-icon-button color="primary">
+        <mat-icon>edit</mat-icon>
+    </button>
+  </div>
+  <div *ngIf="editMode">
+    <div [formGroup]="taskForm">
+      <mat-form-field class="input title">
+        <input formControlName="title" matInput>
+      </mat-form-field>
+    </div>
+    <button
+      [disabled]="!taskForm.valid"
+      class="todo-icon"
+      (click)="finishEdit()"
+      mat-icon-button color="primary">
+        <mat-icon>done</mat-icon>
+    </button>
+  </div>
+  
+</div>
